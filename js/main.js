@@ -150,7 +150,7 @@
   },
   {
     name: "Bridal Makeup",
-    image: "images/BRdide.jpeg"
+    image: "images/Brdide.jpeg"
   },
   {
     name: "Engagement Makeup",
