@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore salon, hair, skin, bridal, and makeup services at RIYAA MAKEOVERS.">
+  <title>Services | RIYAA MAKEOVERS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true"><span>RIYAA</span></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header" data-header></header>
+  <main>
+    <section class="page-hero services-hero">
+      <div class="page-hero-copy reveal fade-up">
+        <p class="eyebrow">Premium Services</p>
+        <h1>Complete salon, skin, hair, and makeup artistry under one elegant roof.</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="services-grid" data-services-grid></div>
+    </section>
+  </main>
+  <footer class="site-footer"></footer>
+  <div class="booking-modal" data-booking-modal aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Book appointment">
+      <button class="modal-close" type="button" data-close-booking aria-label="Close booking">Close</button>
+      <h2>Book a Service</h2>
+      <form class="appointment-form" data-appointment-form>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+        <input type="date" name="date" required>
+        <button class="btn btn-primary" type="submit">Send Request</button>
+      </form>
+    </div>
+  </div>
+  <div class="toast" data-toast>Appointment request sent beautifully.</div>
+  <a class="whatsapp-float" href="https://wa.me/910000000000" aria-label="Chat on WhatsApp">WA</a>
+  <button class="back-to-top" type="button" data-back-top aria-label="Back to top">Up</button>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/appointment.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact RIYAA MAKEOVERS for salon services, bridal makeup, and academy enrollment.">
+  <title>Contact | RIYAA MAKEOVERS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true"><span>RIYAA</span></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header" data-header></header>
+  <main>
+    <section class="page-hero contact-hero">
+      <div class="page-hero-copy reveal fade-up">
+        <p class="eyebrow">Contact</p>
+        <h1>Reserve your salon visit, bridal consultation, or academy seat.</h1>
+      </div>
+    </section>
+    <section class="section contact-layout">
+      <form class="contact-form reveal fade-right" data-appointment-form>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="tel" name="phone" placeholder="Phone" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <select name="service" required><option value="">Service</option><option>Bridal Makeup</option><option>Hair Spa</option><option>Facial</option><option>Academy</option></select>
+        <div class="form-row"><input type="date" name="date" required><input type="time" name="time" required></div>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button class="btn btn-primary" type="submit">Send Appointment Request</button>
+      </form>
+      <aside class="contact-card reveal fade-left">
+        <h2>Visit RIYAA MAKEOVERS</h2>
+        <p>Premium Beauty Salon & Makeup Academy</p>
+        <div class="map-placeholder">Google Map Placeholder</div>
+        <div class="social-actions">
+          <a href="https://wa.me/910000000000">WhatsApp</a>
+          <a href="https://instagram.com/">Instagram</a>
+          <a href="https://facebook.com/">Facebook</a>
+          <a href="tel:+910000000000">Call</a>
+          <a href="mailto:hello@riyaamakeovers.com">Email</a>
+        </div>
+      </aside>
+    </section>
+    <section class="section faq-section">
+      <div class="section-heading reveal fade-up"><p class="eyebrow">FAQ</p><h2>Helpful details before you visit.</h2></div>
+      <div class="faq-list" data-faq>
+        <button>How early should bridal bookings be made?<span>+</span></button>
+        <p>For peak wedding dates, reserve 6 to 10 weeks in advance.</p>
+        <button>Do you offer trials?<span>+</span></button>
+        <p>Yes, bridal and reception trial consultations are available by appointment.</p>
+        <button>Can academy beginners join?<span>+</span></button>
+        <p>Yes, the Basic to Advanced program is designed for beginners and growing artists.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"></footer>
+  <div class="toast" data-toast>Appointment request sent beautifully.</div>
+  <a class="whatsapp-float" href="https://wa.me/910000000000" aria-label="Chat on WhatsApp">WA</a>
+  <button class="back-to-top" type="button" data-back-top aria-label="Back to top">Up</button>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/appointment.js"></script>
+</body>
+</html>

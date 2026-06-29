@@ -1,0 +1,66 @@
+.reveal {
+  opacity: 0;
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.fade-up { transform: translate3d(0, 34px, 0); }
+.fade-down { transform: translate3d(0, -34px, 0); }
+.fade-left { transform: translate3d(34px, 0, 0); }
+.fade-right { transform: translate3d(-34px, 0, 0); }
+.zoom { transform: scale(0.92); }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(4deg); }
+}
+
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(50px, -50px, 0); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1);
+}
+
+.btn.ripple::after {
+  animation: ripple 0.55s ease-out;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 0.65;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(14);
+  }
+}
+
+.luxury-gradient {
+  background-size: 140% 140%;
+  animation: gradientShift 12s ease infinite;
+}
+
+.parallax-card {
+  will-change: transform;
+}

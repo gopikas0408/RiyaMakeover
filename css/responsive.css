@@ -1,0 +1,171 @@
+@media (max-width: 1180px) {
+  .services-grid,
+  .masonry-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .masonry-gallery {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 980px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+    display: grid;
+    gap: 0;
+    padding: 92px 24px 28px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    transform: translateY(-110%);
+    transition: transform 0.35s ease;
+  }
+
+  .site-nav.open {
+    transform: translateY(0);
+  }
+
+  .site-nav a {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .theme-toggle {
+    margin-left: auto;
+  }
+
+  .hero,
+  .split-section,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-visual {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .stats-band,
+  .feature-grid,
+  .blog-grid,
+  .value-section {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: clamp(2.7rem, 13vw, 4.5rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+  }
+
+  .site-header {
+    padding-inline: 16px;
+  }
+
+  .brand span:last-child {
+    max-width: 120px;
+    line-height: 1.2;
+  }
+
+  .hero,
+  .page-hero {
+    min-height: auto;
+    padding: 110px 18px 52px;
+  }
+
+  .hero-actions,
+  .btn {
+    width: 100%;
+  }
+
+  .stats-band,
+  .feature-grid,
+  .blog-grid,
+  .services-grid,
+  .value-section,
+  .site-footer,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .split-media {
+    min-height: 360px;
+  }
+
+  .masonry-gallery {
+    column-count: 2;
+  }
+
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(even) {
+    width: calc(100% - 34px);
+    justify-self: end;
+  }
+
+  .review-card,
+  .review-card.active {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .review-card img {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .cursor-glow {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
+
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .theme-toggle::before {
+    content: "T";
+    font-size: 0.82rem;
+  }
+
+  .back-to-top {
+    right: 22px;
+    bottom: 84px;
+  }
+}
