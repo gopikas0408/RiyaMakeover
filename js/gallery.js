@@ -6,7 +6,7 @@
   ["bridal", "images/Brdide.jpeg"],
   ["hair", "images/hairCUTT.jpeg"],
   ["facial", "images/Facial.jpeg"],
-  ["bridal", "images/Brdide copy.jpeg"],
+  ["bridal", "images/reception.jpeg"],
   ["bridal", "images/enagement.jpeg"],
   ["hair", "images/hair color.jpeg"],
   ["facial", "images/cleanup.jpeg"],
